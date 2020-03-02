@@ -1,0 +1,50 @@
+<div class="container">
+    <form class="col s12" id="mainForm">
+        <div class="row">
+            <div class="col s2"></div>
+            <div class="col s8">
+                <div class="input-field col s6">
+                    <input id="orderInput" type="text" class="validate">
+                    <label for="orderInput">Order a burger</label>
+                </div>
+
+                <div class="input-field col s2">
+                    <button class="btn light-green accent-4 waves-effect waves-light btn-small" type="submit"
+                        name="action">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s6">
+            <ul class="collection">
+                <li class="collection-item light-blue darken-4">Your Order</li>
+                <li>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devour=false}}
+                    {{/unless}}
+                    {{/each}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="col s6">
+            <ul class="collection">
+                <li class="collection-item red accent-4">Demolished Burgers</li>
+                <li>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/devouredBurger-block devour=true}}
+                    {{/if}}
+                    {{/each}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
