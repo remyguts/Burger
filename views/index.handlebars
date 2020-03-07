@@ -10,7 +10,7 @@
 
                 <div class="input-field col s2">
                     <button class="btn light-green accent-4 waves-effect waves-light btn-small" type="submit"
-                        name="action">
+                        name="action" id="add-burger">
                         Submit
                     </button>
                 </div>
@@ -27,7 +27,7 @@
                 <li>
                     {{#each burgers}}
                     {{#unless devoured}}
-                    {{> burgers/burger-block devour=false}}
+                    {{> burgers/devouredBurger-block devour=false}}
                     {{/unless}}
                     {{/each}}
                 </li>
