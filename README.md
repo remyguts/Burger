@@ -3,14 +3,11 @@ A restaurant app that lets users input the names of burgers they'd like to eat!
 
 ## Purpose / User Story
 
-AS A user, I want to be able to write and save notes
-I WANT to be able to delete notes I've written before
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+AS A user, I want to input the names of burgers people would like to eat.
 
 # Functionality
 
-When using the app, first the user opens the page and presses the get started button. Then, they click on the note field and begins writing notes, when the notes are finished the note is saved for future use or editing. 
-
+When using the app, first the user types in the name of the burger or the type of burger, and it saves on the database. You can also delete the burgers you don't want on the list.
 
 ### Code 
 ![Screenshot (41)](https://user-images.githubusercontent.com/56744605/74624331-d09aad80-50fc-11ea-95cf-c2473646fe44.png)
